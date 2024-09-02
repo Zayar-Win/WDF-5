@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-app">
+      <!-- Header -->
+      <header class="header">
+        <h1>Todo List</h1>
+        <button class="add-task-btn">Add New Task</button>
+      </header>
+
+      <!-- Main Section -->
+      <main>
+        <!-- Task Input Area -->
+        <div class="task-input">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Enter a new task..."
+          />
+          <button class="submit-btn">Add Task</button>
+        </div>
+
+        <!-- Task List Container -->
+        <ul class="task-list">
+          <!-- Example Task Item -->
+        </ul>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Active</button>
+        <button class="filter-btn">Completed</button>
+        <button class="clear-completed-btn">Clear Completed</button>
+      </footer>
+    </div>
+    <script>
+      //define todos array
+      let todos = [];
+      let addTaskButton = document.getElementsByClassName("submit-btn")[0];
+      let taskInput = document.getElementById("task-input");
+      let taskList = document.getElementsByClassName("task-list")[0];
+      let clearCompleteBtn = document.getElementsByClassName(
+        "clear-completed-btn"
+      )[0];
+
+      clearCompleteBtn.addEventListener("click", function () {
+        // filter
+        todos = todos.filter(function (todo) {
+          return todo.isComplete == false;
+        });
+        showTodos();
+      });
+      // click -> addTask button -> add item in Todo array
+      addTaskButton.addEventListener("click", function () {
+        if (taskInput.value == "") {
+          alert("To add todo, you will need at least 1 letter.");
+          return;
+        }
+
+        let todoItem = {
+          content: taskInput.value,
+          isComplete: false,
+        };
+        todos.push(todoItem);
+        taskInput.value = "";
+        //show todo items that have in todos array
+        showTodos();
+      });
+
+      function showTodos() {
+        // <li class="task-item">
+        //   <span class="task-name">Sample Task</span>
+        //   <button class="complete-btn">Complete</button>
+        //   <button class="delete-btn">Delete</button>
+        // </li>
+
+        taskList.innerHTML = "";
+
+        for (let i = 0; i < todos.length; i++) {
+          let currentTodoItem = todos[i];
+          let li = document.createElement("li");
+          li.classList.add("task-item");
+          if (currentTodoItem.isComplete) {
+            li.classList.add("completed");
+          }
+          let span = document.createElement("span");
+          span.classList.add("task-name");
+          span.innerText = currentTodoItem.content;
+          let completeBtn = document.createElement("button");
+          completeBtn.classList.add("complete-btn");
+          if (currentTodoItem.isComplete) {
+            completeBtn.innerText = "Uncomplete";
+          } else {
+            completeBtn.innerText = "Complete";
+          }
+          completeBtn.addEventListener("click", function () {
+            if (todos[i].isComplete) {
+              todos[i].isComplete = false;
+            } else {
+              todos[i].isComplete = true;
+            }
+            showTodos();
+          });
+          let deleteBtn = document.createElement("button");
+          deleteBtn.classList.add("delete-btn");
+          deleteBtn.innerText = "Delete";
+          deleteBtn.addEventListener("click", function () {
+            // pop shift
+            todos.splice(i, 1);
+            showTodos();
+          });
+          li.appendChild(span);
+          li.appendChild(completeBtn);
+          li.appendChild(deleteBtn);
+          taskList.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

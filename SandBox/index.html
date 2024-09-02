@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SandBox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .own-button {
+        font-size: 17px;
+        padding: 12px 25px;
+      }
+      .text-ownprimary {
+        color: #5f5dba;
+      }
+
+      .hero-section-image {
+        width: 60%;
+      }
+      .review-container {
+        padding: 80px 40px;
+      }
+
+      .cards-container {
+        width: 100%;
+      }
+      @media (min-width: 1440px) {
+        .hero-section {
+          height: auto;
+        }
+        .review-container {
+          padding: 100px 160px;
+        }
+        .review-image-container {
+          flex-basis: 40%;
+        }
+        .review-content-container {
+          flex-basis: 60%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero-section {
+          height: 100vh;
+        }
+        .hero-section-image {
+          width: 100%;
+        }
+
+        .review-image-container {
+          flex-basis: 50%;
+        }
+        .review-content-container {
+          flex-basis: 50%;
+        }
+        .cards-container {
+          width: 85%;
+        }
+        .first-price-card {
+          transform: scaleY(0.94);
+        }
+      }
+      @media (min-width: 768px) {
+        .form-container {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow-hidden" style="background-color: #f0f0f7">
+      <nav class="navbar container navbar-expand-lg py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              style="width: 130px"
+              src="https://sandbox.elemisthemes.com/assets/img/logo-dark@2x.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul
+            class="navbar-nav d-lg-flex d-none flex-grow-1 justify-content-center gap-5 me-auto mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-medium" href="#">Pages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link fs-6 fw-medium">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-medium" aria-disabled="true">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-medium" aria-disabled="true">Blocks</a>
+            </li>
+          </ul>
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav d-lg-none d-flex flex-grow-1 justify-content-center align-items-center gap-2 me-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Demo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-medium" href="#">Pages</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link fs-6 fw-medium">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-medium" aria-disabled="true"
+                  >Blogs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-medium" aria-disabled="true"
+                  >Blocks</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button
+                class="btn btn-primary btn-lg own-button mx-auto"
+                type="submit"
+              >
+                Free Trial
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="d-flex w-full gap-lg-0 gap-5 flex-lg-row flex-column hero-section position-relative mt-4 container"
+      >
+        <div
+          class="d-flex flex-column align-items-lg-start align-items-center"
+          style="flex-basis: 60%; margin-top: 100px"
+        >
+          <h1 style="font-size: 48px">Grow Your Business with</h1>
+          <h1 class="text-ownprimary" style="font-size: 48px">
+            Our Marketing Solutions
+          </h1>
+          <p class="fs-4 pt-4 w-75" style="color: #898f9d">
+            We help our clients to increase their website traffic, rankings and
+            visibility in search results.
+          </p>
+          <div class="mt-5 d-flex flex-sm-row flex-column gap-3">
+            <button class="btn btn-primary own-button">Try it for free</button>
+            <button class="btn btn-outline-primary own-button">
+              Explore Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="d-flex d-lg-block justify-content-center"
+          style="flex-basis: 40%; padding-right: 20px; z-index: 20"
+        >
+          <img
+            class="hero-section-image"
+            src="https://sandbox.elemisthemes.com/assets/img/illustrations/3d11@2x.png"
+            alt=""
+          />
+        </div>
+        <img
+          src="https://sandbox.elemisthemes.com/assets/img/photos/clouds.png"
+          alt=""
+          class="position-absolute"
+          style="bottom: -20px; left: -60px; width: 150%; height: 200px"
+        />
+      </div>
+    </div>
+
+    <div class="mt-5 container">
+      <p class="text-center fs-5 text-ownprimary">What We Do?</p>
+      <h1 class="w-75 text-center mx-auto text-ownprimary">
+        The full service we are offering is specifically designed to meet your
+        business needs.
+      </h1>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256.01 256"
+            style="width: 50px; fill: #5f5dba"
+            data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/globe-2.svg"
+          >
+            <path
+              class="fill-secondary"
+              d="M128.11 256h-.24a126.37 126.37 0 01-22-1.84 8 8 0 112.72-15.76A114.68 114.68 0 00128 240a8.06 8.06 0 018.07 8 8 8 0 01-7.94 8zm33.52-12.5a8 8 0 014.77-10.25 112.18 112.18 0 0017.66-8.25 8 8 0 018 13.85 128.36 128.36 0 01-20.19 9.46 8 8 0 01-10.26-4.79zm-97.5-4.56a128.83 128.83 0 01-18.27-12.78 8 8 0 1110.25-12.27 114.33 114.33 0 0016 11.2 8 8 0 11-8 13.85zm150.69-27.71a8 8 0 01-1-11.26A112.91 112.91 0 00225 184a8 8 0 0113.86 8 130.3 130.3 0 01-12.78 18.26 8 8 0 01-11.28 1zm-197.59-19A128.41 128.41 0 017.76 172a8 8 0 1115-5.49 112.8 112.8 0 008.29 17.67 8 8 0 11-13.84 8zM244.8 156.7a8 8 0 01-6.5-9.26A112.3 112.3 0 00240 128a8.23 8.23 0 018-8.26 7.81 7.81 0 018 8.76 124.89 124.89 0 01-1.92 21.72 8 8 0 01-9.26 6.48zM8 136.13a7.89 7.89 0 01-8-7.87s.61-15 1.86-22.18a8 8 0 1115.76 2.7A114.47 114.47 0 0016 128a8.09 8.09 0 01-8 8.13zm225.1-46.88a110.41 110.41 0 00-8.32-17.63 8 8 0 0113.83-8.08 129 129 0 019.52 20.17 8 8 0 01-15 5.54zM19.9 75.18A8 8 0 0117 64.26 126.41 126.41 0 0129.73 46 8 8 0 1142 56.21a112.72 112.72 0 00-11.17 16 8 8 0 01-10.93 3zm179.76-33.24a113.17 113.17 0 00-16-11.16 8 8 0 117.95-13.87 127.39 127.39 0 0118.3 12.75 8 8 0 01-10.24 12.28zM60.78 28.26a8 8 0 012.88-11 128 128 0 0120.18-9.44 8 8 0 115.52 15 112.17 112.17 0 00-17.63 8.31 8 8 0 01-11-2.88zm86.29-10.64A112.4 112.4 0 00128 16a8.17 8.17 0 01-8.19-8 7.84 7.84 0 017.81-8h.38a127.72 127.72 0 0121.8 1.86 8 8 0 01-2.71 15.76z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm62.61 145.66a103 103 0 00-14.49-7.76 160.22 160.22 0 005-33.9h26.48a79.47 79.47 0 01-17.01 41.66zM48.4 136h26.48a161.6 161.6 0 005 33.9 104.11 104.11 0 00-14.5 7.76A79.47 79.47 0 0148.4 136zm17-57.66a103.14 103.14 0 0014.5 7.76 160.2 160.2 0 00-5 33.9H48.4a79.47 79.47 0 0117-41.66zM120 79.7a106.49 106.49 0 01-20-3.43c5.41-13 12.6-22.11 20-26zm0 16V120H90.86A145.12 145.12 0 0195 91.49a122.72 122.72 0 0025 4.21zm0 40.3v24.3a121.26 121.26 0 00-25 4.23A144.37 144.37 0 0190.86 136H120zm0 40.3v29.48c-7.4-3.94-14.59-13-20-26a104.12 104.12 0 0120-3.44zm16 0a106.21 106.21 0 0120 3.43c-5.4 13-12.59 22.11-20 26zm0-16V136h29.1a144.37 144.37 0 01-4.16 28.51 122.49 122.49 0 00-25-4.21zm0-40.3V95.7a121.14 121.14 0 0025-4.23 142.91 142.91 0 014.1 28.53H136zm0-40.3V50.24c7.41 3.94 14.6 13 20 26a104.36 104.36 0 01-20 3.46zm27.94-23.08a80.19 80.19 0 0115.25 10 88.15 88.15 0 01-8.19 4.21 98.1 98.1 0 00-7.12-14.21zm-79 14.21a86.72 86.72 0 01-8.12-4.25 80.12 80.12 0 0115.24-10 95.14 95.14 0 00-7.12 14.25zm0 114.34a98.11 98.11 0 007.12 14.21 80.12 80.12 0 01-15.24-10 86.72 86.72 0 018.12-4.21zm86.1 0a88.15 88.15 0 018.13 4.25 80.19 80.19 0 01-15.25 10 99.14 99.14 0 007.08-14.25zM181.1 120a161 161 0 00-5-33.9 104.57 104.57 0 0014.49-7.76 79.47 79.47 0 0117 41.66z"
+            ></path>
+          </svg>
+          <h1 class="fs-5 my-4">SEO Services</h1>
+          <p class="fs-6 text-center" style="line-height: 1.8">
+            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+            porta gravida eget metus cras justo.
+          </p>
+          <div>
+            <p class="text-ownprimary">Learn More</p>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex col-md-6 flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256.01 256"
+            style="width: 50px; fill: #5f5dba"
+            data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/globe-2.svg"
+          >
+            <path
+              class="fill-secondary"
+              d="M128.11 256h-.24a126.37 126.37 0 01-22-1.84 8 8 0 112.72-15.76A114.68 114.68 0 00128 240a8.06 8.06 0 018.07 8 8 8 0 01-7.94 8zm33.52-12.5a8 8 0 014.77-10.25 112.18 112.18 0 0017.66-8.25 8 8 0 018 13.85 128.36 128.36 0 01-20.19 9.46 8 8 0 01-10.26-4.79zm-97.5-4.56a128.83 128.83 0 01-18.27-12.78 8 8 0 1110.25-12.27 114.33 114.33 0 0016 11.2 8 8 0 11-8 13.85zm150.69-27.71a8 8 0 01-1-11.26A112.91 112.91 0 00225 184a8 8 0 0113.86 8 130.3 130.3 0 01-12.78 18.26 8 8 0 01-11.28 1zm-197.59-19A128.41 128.41 0 017.76 172a8 8 0 1115-5.49 112.8 112.8 0 008.29 17.67 8 8 0 11-13.84 8zM244.8 156.7a8 8 0 01-6.5-9.26A112.3 112.3 0 00240 128a8.23 8.23 0 018-8.26 7.81 7.81 0 018 8.76 124.89 124.89 0 01-1.92 21.72 8 8 0 01-9.26 6.48zM8 136.13a7.89 7.89 0 01-8-7.87s.61-15 1.86-22.18a8 8 0 1115.76 2.7A114.47 114.47 0 0016 128a8.09 8.09 0 01-8 8.13zm225.1-46.88a110.41 110.41 0 00-8.32-17.63 8 8 0 0113.83-8.08 129 129 0 019.52 20.17 8 8 0 01-15 5.54zM19.9 75.18A8 8 0 0117 64.26 126.41 126.41 0 0129.73 46 8 8 0 1142 56.21a112.72 112.72 0 00-11.17 16 8 8 0 01-10.93 3zm179.76-33.24a113.17 113.17 0 00-16-11.16 8 8 0 117.95-13.87 127.39 127.39 0 0118.3 12.75 8 8 0 01-10.24 12.28zM60.78 28.26a8 8 0 012.88-11 128 128 0 0120.18-9.44 8 8 0 115.52 15 112.17 112.17 0 00-17.63 8.31 8 8 0 01-11-2.88zm86.29-10.64A112.4 112.4 0 00128 16a8.17 8.17 0 01-8.19-8 7.84 7.84 0 017.81-8h.38a127.72 127.72 0 0121.8 1.86 8 8 0 01-2.71 15.76z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm62.61 145.66a103 103 0 00-14.49-7.76 160.22 160.22 0 005-33.9h26.48a79.47 79.47 0 01-17.01 41.66zM48.4 136h26.48a161.6 161.6 0 005 33.9 104.11 104.11 0 00-14.5 7.76A79.47 79.47 0 0148.4 136zm17-57.66a103.14 103.14 0 0014.5 7.76 160.2 160.2 0 00-5 33.9H48.4a79.47 79.47 0 0117-41.66zM120 79.7a106.49 106.49 0 01-20-3.43c5.41-13 12.6-22.11 20-26zm0 16V120H90.86A145.12 145.12 0 0195 91.49a122.72 122.72 0 0025 4.21zm0 40.3v24.3a121.26 121.26 0 00-25 4.23A144.37 144.37 0 0190.86 136H120zm0 40.3v29.48c-7.4-3.94-14.59-13-20-26a104.12 104.12 0 0120-3.44zm16 0a106.21 106.21 0 0120 3.43c-5.4 13-12.59 22.11-20 26zm0-16V136h29.1a144.37 144.37 0 01-4.16 28.51 122.49 122.49 0 00-25-4.21zm0-40.3V95.7a121.14 121.14 0 0025-4.23 142.91 142.91 0 014.1 28.53H136zm0-40.3V50.24c7.41 3.94 14.6 13 20 26a104.36 104.36 0 01-20 3.46zm27.94-23.08a80.19 80.19 0 0115.25 10 88.15 88.15 0 01-8.19 4.21 98.1 98.1 0 00-7.12-14.21zm-79 14.21a86.72 86.72 0 01-8.12-4.25 80.12 80.12 0 0115.24-10 95.14 95.14 0 00-7.12 14.25zm0 114.34a98.11 98.11 0 007.12 14.21 80.12 80.12 0 01-15.24-10 86.72 86.72 0 018.12-4.21zm86.1 0a88.15 88.15 0 018.13 4.25 80.19 80.19 0 01-15.25 10 99.14 99.14 0 007.08-14.25zM181.1 120a161 161 0 00-5-33.9 104.57 104.57 0 0014.49-7.76 79.47 79.47 0 0117 41.66z"
+            ></path>
+          </svg>
+          <h1 class="fs-5 my-4">SEO Services</h1>
+          <p class="fs-6 text-center" style="line-height: 1.8">
+            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+            porta gravida eget metus cras justo.
+          </p>
+          <div>
+            <p class="text-ownprimary">Learn More</p>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex col-md-6 flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256.01 256"
+            style="width: 50px; fill: #5f5dba"
+            data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/globe-2.svg"
+          >
+            <path
+              class="fill-secondary"
+              d="M128.11 256h-.24a126.37 126.37 0 01-22-1.84 8 8 0 112.72-15.76A114.68 114.68 0 00128 240a8.06 8.06 0 018.07 8 8 8 0 01-7.94 8zm33.52-12.5a8 8 0 014.77-10.25 112.18 112.18 0 0017.66-8.25 8 8 0 018 13.85 128.36 128.36 0 01-20.19 9.46 8 8 0 01-10.26-4.79zm-97.5-4.56a128.83 128.83 0 01-18.27-12.78 8 8 0 1110.25-12.27 114.33 114.33 0 0016 11.2 8 8 0 11-8 13.85zm150.69-27.71a8 8 0 01-1-11.26A112.91 112.91 0 00225 184a8 8 0 0113.86 8 130.3 130.3 0 01-12.78 18.26 8 8 0 01-11.28 1zm-197.59-19A128.41 128.41 0 017.76 172a8 8 0 1115-5.49 112.8 112.8 0 008.29 17.67 8 8 0 11-13.84 8zM244.8 156.7a8 8 0 01-6.5-9.26A112.3 112.3 0 00240 128a8.23 8.23 0 018-8.26 7.81 7.81 0 018 8.76 124.89 124.89 0 01-1.92 21.72 8 8 0 01-9.26 6.48zM8 136.13a7.89 7.89 0 01-8-7.87s.61-15 1.86-22.18a8 8 0 1115.76 2.7A114.47 114.47 0 0016 128a8.09 8.09 0 01-8 8.13zm225.1-46.88a110.41 110.41 0 00-8.32-17.63 8 8 0 0113.83-8.08 129 129 0 019.52 20.17 8 8 0 01-15 5.54zM19.9 75.18A8 8 0 0117 64.26 126.41 126.41 0 0129.73 46 8 8 0 1142 56.21a112.72 112.72 0 00-11.17 16 8 8 0 01-10.93 3zm179.76-33.24a113.17 113.17 0 00-16-11.16 8 8 0 117.95-13.87 127.39 127.39 0 0118.3 12.75 8 8 0 01-10.24 12.28zM60.78 28.26a8 8 0 012.88-11 128 128 0 0120.18-9.44 8 8 0 115.52 15 112.17 112.17 0 00-17.63 8.31 8 8 0 01-11-2.88zm86.29-10.64A112.4 112.4 0 00128 16a8.17 8.17 0 01-8.19-8 7.84 7.84 0 017.81-8h.38a127.72 127.72 0 0121.8 1.86 8 8 0 01-2.71 15.76z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm62.61 145.66a103 103 0 00-14.49-7.76 160.22 160.22 0 005-33.9h26.48a79.47 79.47 0 01-17.01 41.66zM48.4 136h26.48a161.6 161.6 0 005 33.9 104.11 104.11 0 00-14.5 7.76A79.47 79.47 0 0148.4 136zm17-57.66a103.14 103.14 0 0014.5 7.76 160.2 160.2 0 00-5 33.9H48.4a79.47 79.47 0 0117-41.66zM120 79.7a106.49 106.49 0 01-20-3.43c5.41-13 12.6-22.11 20-26zm0 16V120H90.86A145.12 145.12 0 0195 91.49a122.72 122.72 0 0025 4.21zm0 40.3v24.3a121.26 121.26 0 00-25 4.23A144.37 144.37 0 0190.86 136H120zm0 40.3v29.48c-7.4-3.94-14.59-13-20-26a104.12 104.12 0 0120-3.44zm16 0a106.21 106.21 0 0120 3.43c-5.4 13-12.59 22.11-20 26zm0-16V136h29.1a144.37 144.37 0 01-4.16 28.51 122.49 122.49 0 00-25-4.21zm0-40.3V95.7a121.14 121.14 0 0025-4.23 142.91 142.91 0 014.1 28.53H136zm0-40.3V50.24c7.41 3.94 14.6 13 20 26a104.36 104.36 0 01-20 3.46zm27.94-23.08a80.19 80.19 0 0115.25 10 88.15 88.15 0 01-8.19 4.21 98.1 98.1 0 00-7.12-14.21zm-79 14.21a86.72 86.72 0 01-8.12-4.25 80.12 80.12 0 0115.24-10 95.14 95.14 0 00-7.12 14.25zm0 114.34a98.11 98.11 0 007.12 14.21 80.12 80.12 0 01-15.24-10 86.72 86.72 0 018.12-4.21zm86.1 0a88.15 88.15 0 018.13 4.25 80.19 80.19 0 01-15.25 10 99.14 99.14 0 007.08-14.25zM181.1 120a161 161 0 00-5-33.9 104.57 104.57 0 0014.49-7.76 79.47 79.47 0 0117 41.66z"
+            ></path>
+          </svg>
+          <h1 class="fs-5 my-4">SEO Services</h1>
+          <p class="fs-6 text-center" style="line-height: 1.8">
+            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+            porta gravida eget metus cras justo.
+          </p>
+          <div>
+            <p class="text-ownprimary">Learn More</p>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex col-md-6 flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256.01 256"
+            style="width: 50px; fill: #5f5dba"
+            data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/globe-2.svg"
+          >
+            <path
+              class="fill-secondary"
+              d="M128.11 256h-.24a126.37 126.37 0 01-22-1.84 8 8 0 112.72-15.76A114.68 114.68 0 00128 240a8.06 8.06 0 018.07 8 8 8 0 01-7.94 8zm33.52-12.5a8 8 0 014.77-10.25 112.18 112.18 0 0017.66-8.25 8 8 0 018 13.85 128.36 128.36 0 01-20.19 9.46 8 8 0 01-10.26-4.79zm-97.5-4.56a128.83 128.83 0 01-18.27-12.78 8 8 0 1110.25-12.27 114.33 114.33 0 0016 11.2 8 8 0 11-8 13.85zm150.69-27.71a8 8 0 01-1-11.26A112.91 112.91 0 00225 184a8 8 0 0113.86 8 130.3 130.3 0 01-12.78 18.26 8 8 0 01-11.28 1zm-197.59-19A128.41 128.41 0 017.76 172a8 8 0 1115-5.49 112.8 112.8 0 008.29 17.67 8 8 0 11-13.84 8zM244.8 156.7a8 8 0 01-6.5-9.26A112.3 112.3 0 00240 128a8.23 8.23 0 018-8.26 7.81 7.81 0 018 8.76 124.89 124.89 0 01-1.92 21.72 8 8 0 01-9.26 6.48zM8 136.13a7.89 7.89 0 01-8-7.87s.61-15 1.86-22.18a8 8 0 1115.76 2.7A114.47 114.47 0 0016 128a8.09 8.09 0 01-8 8.13zm225.1-46.88a110.41 110.41 0 00-8.32-17.63 8 8 0 0113.83-8.08 129 129 0 019.52 20.17 8 8 0 01-15 5.54zM19.9 75.18A8 8 0 0117 64.26 126.41 126.41 0 0129.73 46 8 8 0 1142 56.21a112.72 112.72 0 00-11.17 16 8 8 0 01-10.93 3zm179.76-33.24a113.17 113.17 0 00-16-11.16 8 8 0 117.95-13.87 127.39 127.39 0 0118.3 12.75 8 8 0 01-10.24 12.28zM60.78 28.26a8 8 0 012.88-11 128 128 0 0120.18-9.44 8 8 0 115.52 15 112.17 112.17 0 00-17.63 8.31 8 8 0 01-11-2.88zm86.29-10.64A112.4 112.4 0 00128 16a8.17 8.17 0 01-8.19-8 7.84 7.84 0 017.81-8h.38a127.72 127.72 0 0121.8 1.86 8 8 0 01-2.71 15.76z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm62.61 145.66a103 103 0 00-14.49-7.76 160.22 160.22 0 005-33.9h26.48a79.47 79.47 0 01-17.01 41.66zM48.4 136h26.48a161.6 161.6 0 005 33.9 104.11 104.11 0 00-14.5 7.76A79.47 79.47 0 0148.4 136zm17-57.66a103.14 103.14 0 0014.5 7.76 160.2 160.2 0 00-5 33.9H48.4a79.47 79.47 0 0117-41.66zM120 79.7a106.49 106.49 0 01-20-3.43c5.41-13 12.6-22.11 20-26zm0 16V120H90.86A145.12 145.12 0 0195 91.49a122.72 122.72 0 0025 4.21zm0 40.3v24.3a121.26 121.26 0 00-25 4.23A144.37 144.37 0 0190.86 136H120zm0 40.3v29.48c-7.4-3.94-14.59-13-20-26a104.12 104.12 0 0120-3.44zm16 0a106.21 106.21 0 0120 3.43c-5.4 13-12.59 22.11-20 26zm0-16V136h29.1a144.37 144.37 0 01-4.16 28.51 122.49 122.49 0 00-25-4.21zm0-40.3V95.7a121.14 121.14 0 0025-4.23 142.91 142.91 0 014.1 28.53H136zm0-40.3V50.24c7.41 3.94 14.6 13 20 26a104.36 104.36 0 01-20 3.46zm27.94-23.08a80.19 80.19 0 0115.25 10 88.15 88.15 0 01-8.19 4.21 98.1 98.1 0 00-7.12-14.21zm-79 14.21a86.72 86.72 0 01-8.12-4.25 80.12 80.12 0 0115.24-10 95.14 95.14 0 00-7.12 14.25zm0 114.34a98.11 98.11 0 007.12 14.21 80.12 80.12 0 01-15.24-10 86.72 86.72 0 018.12-4.21zm86.1 0a88.15 88.15 0 018.13 4.25 80.19 80.19 0 01-15.25 10 99.14 99.14 0 007.08-14.25zM181.1 120a161 161 0 00-5-33.9 104.57 104.57 0 0014.49-7.76 79.47 79.47 0 0117 41.66z"
+            ></path>
+          </svg>
+          <h1 class="fs-5 my-4">SEO Services</h1>
+          <p class="fs-6 text-center" style="line-height: 1.8">
+            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+            porta gravida eget metus cras justo.
+          </p>
+          <div>
+            <p class="text-ownprimary">Learn More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <div
+        class="d-flex flex-lg-row flex-column align-items-center"
+        style="gap: 100px"
+      >
+        <div style="flex-basis: 50%">
+          <img
+            class="w-100"
+            src="https://sandbox.elemisthemes.com/assets/img/illustrations/3d8@2x.png"
+            alt=""
+          />
+        </div>
+        <div style="flex-basis: 50%">
+          <p class="fs-6 text-ownprimary text-uppercase">Why Choose Us?</p>
+          <h1 class="fs-2">
+            So here a few reasons why our valued customers choose us.
+          </h1>
+          <div class="row mt-5">
+            <div class="col-md-6 col-12 d-flex align-items-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="width: 50px; fill: #5f5dba"
+                data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/lamp.svg"
+                class="svg-inject icon-svg icon-svg-xs solid-mono text-grape me-4"
+              >
+                <path
+                  class="fill-secondary"
+                  d="M128 36.86a8 8 0 01-8-8V8a8 8 0 0116 0v20.86a8 8 0 01-8 8zm70.1 29.04a8 8 0 01-5.67-13.64l14.77-14.77a8 8 0 1111.31 11.31l-14.77 14.77a8 8 0 01-5.64 2.33zM248 136h-20.86a8 8 0 010-16H248a8 8 0 010 16zm-35.15 84.85a8.06 8.06 0 01-5.67-2.34l-14.76-14.77a8 8 0 0111.31-11.31l14.77 14.77a8 8 0 010 11.31 7.92 7.92 0 01-5.65 2.34zm-169.7 0a8 8 0 01-5.66-13.65l14.77-14.77a8 8 0 0111.31 11.31L48.8 218.51a7.93 7.93 0 01-5.65 2.34zM28.86 136H8a8 8 0 010-16h20.86a8 8 0 110 16zM57.9 65.9a8 8 0 01-5.66-2.33L37.47 48.8a8 8 0 1111.31-11.31l14.77 14.77A8 8 0 0157.9 65.9z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160 224v13.33A18.76 18.76 0 01141.33 256h-26.67c-9 0-18.66-6.83-18.66-21.76V224zm15-154a74.93 74.93 0 00-63-15c-28.27 5.91-51.2 29-57.07 57.21a74.74 74.74 0 0028.16 75.41A32.19 32.19 0 0195.25 208v.12A2 2 0 0196 208h64a.93.93 0 01.53.11V208c1.49-8.11 6.29-15.57 13.65-21.33A74.72 74.72 0 00175 70zm-7 63.36a8.06 8.06 0 01-8-8A29.32 29.32 0 00130.67 96a8 8 0 110-16A45.43 45.43 0 01176 125.33a8.06 8.06 0 01-8 8z"
+                ></path>
+                <path
+                  class="fill-secondary"
+                  d="M95.25 208H96a1.8 1.8 0 00-.75.11z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160.53 208v.11a.93.93 0 00-.53-.11z"
+                ></path>
+              </svg>
+              <div>
+                <h1 class="fs-5">Creativity</h1>
+                <p class="fs-6">
+                  Curabitur blandit lacus porttitor ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="width: 50px; fill: #5f5dba"
+                data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/lamp.svg"
+                class="svg-inject icon-svg icon-svg-xs solid-mono text-grape me-4"
+              >
+                <path
+                  class="fill-secondary"
+                  d="M128 36.86a8 8 0 01-8-8V8a8 8 0 0116 0v20.86a8 8 0 01-8 8zm70.1 29.04a8 8 0 01-5.67-13.64l14.77-14.77a8 8 0 1111.31 11.31l-14.77 14.77a8 8 0 01-5.64 2.33zM248 136h-20.86a8 8 0 010-16H248a8 8 0 010 16zm-35.15 84.85a8.06 8.06 0 01-5.67-2.34l-14.76-14.77a8 8 0 0111.31-11.31l14.77 14.77a8 8 0 010 11.31 7.92 7.92 0 01-5.65 2.34zm-169.7 0a8 8 0 01-5.66-13.65l14.77-14.77a8 8 0 0111.31 11.31L48.8 218.51a7.93 7.93 0 01-5.65 2.34zM28.86 136H8a8 8 0 010-16h20.86a8 8 0 110 16zM57.9 65.9a8 8 0 01-5.66-2.33L37.47 48.8a8 8 0 1111.31-11.31l14.77 14.77A8 8 0 0157.9 65.9z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160 224v13.33A18.76 18.76 0 01141.33 256h-26.67c-9 0-18.66-6.83-18.66-21.76V224zm15-154a74.93 74.93 0 00-63-15c-28.27 5.91-51.2 29-57.07 57.21a74.74 74.74 0 0028.16 75.41A32.19 32.19 0 0195.25 208v.12A2 2 0 0196 208h64a.93.93 0 01.53.11V208c1.49-8.11 6.29-15.57 13.65-21.33A74.72 74.72 0 00175 70zm-7 63.36a8.06 8.06 0 01-8-8A29.32 29.32 0 00130.67 96a8 8 0 110-16A45.43 45.43 0 01176 125.33a8.06 8.06 0 01-8 8z"
+                ></path>
+                <path
+                  class="fill-secondary"
+                  d="M95.25 208H96a1.8 1.8 0 00-.75.11z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160.53 208v.11a.93.93 0 00-.53-.11z"
+                ></path>
+              </svg>
+              <div>
+                <h1 class="fs-5">Creativity</h1>
+                <p class="fs-6">
+                  Curabitur blandit lacus porttitor ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="width: 50px; fill: #5f5dba"
+                data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/lamp.svg"
+                class="svg-inject icon-svg icon-svg-xs solid-mono text-grape me-4"
+              >
+                <path
+                  class="fill-secondary"
+                  d="M128 36.86a8 8 0 01-8-8V8a8 8 0 0116 0v20.86a8 8 0 01-8 8zm70.1 29.04a8 8 0 01-5.67-13.64l14.77-14.77a8 8 0 1111.31 11.31l-14.77 14.77a8 8 0 01-5.64 2.33zM248 136h-20.86a8 8 0 010-16H248a8 8 0 010 16zm-35.15 84.85a8.06 8.06 0 01-5.67-2.34l-14.76-14.77a8 8 0 0111.31-11.31l14.77 14.77a8 8 0 010 11.31 7.92 7.92 0 01-5.65 2.34zm-169.7 0a8 8 0 01-5.66-13.65l14.77-14.77a8 8 0 0111.31 11.31L48.8 218.51a7.93 7.93 0 01-5.65 2.34zM28.86 136H8a8 8 0 010-16h20.86a8 8 0 110 16zM57.9 65.9a8 8 0 01-5.66-2.33L37.47 48.8a8 8 0 1111.31-11.31l14.77 14.77A8 8 0 0157.9 65.9z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160 224v13.33A18.76 18.76 0 01141.33 256h-26.67c-9 0-18.66-6.83-18.66-21.76V224zm15-154a74.93 74.93 0 00-63-15c-28.27 5.91-51.2 29-57.07 57.21a74.74 74.74 0 0028.16 75.41A32.19 32.19 0 0195.25 208v.12A2 2 0 0196 208h64a.93.93 0 01.53.11V208c1.49-8.11 6.29-15.57 13.65-21.33A74.72 74.72 0 00175 70zm-7 63.36a8.06 8.06 0 01-8-8A29.32 29.32 0 00130.67 96a8 8 0 110-16A45.43 45.43 0 01176 125.33a8.06 8.06 0 01-8 8z"
+                ></path>
+                <path
+                  class="fill-secondary"
+                  d="M95.25 208H96a1.8 1.8 0 00-.75.11z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160.53 208v.11a.93.93 0 00-.53-.11z"
+                ></path>
+              </svg>
+              <div>
+                <h1 class="fs-5">Creativity</h1>
+                <p class="fs-6">
+                  Curabitur blandit lacus porttitor ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="width: 50px; fill: #5f5dba"
+                data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/lamp.svg"
+                class="svg-inject icon-svg icon-svg-xs solid-mono text-grape me-4"
+              >
+                <path
+                  class="fill-secondary"
+                  d="M128 36.86a8 8 0 01-8-8V8a8 8 0 0116 0v20.86a8 8 0 01-8 8zm70.1 29.04a8 8 0 01-5.67-13.64l14.77-14.77a8 8 0 1111.31 11.31l-14.77 14.77a8 8 0 01-5.64 2.33zM248 136h-20.86a8 8 0 010-16H248a8 8 0 010 16zm-35.15 84.85a8.06 8.06 0 01-5.67-2.34l-14.76-14.77a8 8 0 0111.31-11.31l14.77 14.77a8 8 0 010 11.31 7.92 7.92 0 01-5.65 2.34zm-169.7 0a8 8 0 01-5.66-13.65l14.77-14.77a8 8 0 0111.31 11.31L48.8 218.51a7.93 7.93 0 01-5.65 2.34zM28.86 136H8a8 8 0 010-16h20.86a8 8 0 110 16zM57.9 65.9a8 8 0 01-5.66-2.33L37.47 48.8a8 8 0 1111.31-11.31l14.77 14.77A8 8 0 0157.9 65.9z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160 224v13.33A18.76 18.76 0 01141.33 256h-26.67c-9 0-18.66-6.83-18.66-21.76V224zm15-154a74.93 74.93 0 00-63-15c-28.27 5.91-51.2 29-57.07 57.21a74.74 74.74 0 0028.16 75.41A32.19 32.19 0 0195.25 208v.12A2 2 0 0196 208h64a.93.93 0 01.53.11V208c1.49-8.11 6.29-15.57 13.65-21.33A74.72 74.72 0 00175 70zm-7 63.36a8.06 8.06 0 01-8-8A29.32 29.32 0 00130.67 96a8 8 0 110-16A45.43 45.43 0 01176 125.33a8.06 8.06 0 01-8 8z"
+                ></path>
+                <path
+                  class="fill-secondary"
+                  d="M95.25 208H96a1.8 1.8 0 00-.75.11z"
+                ></path>
+                <path
+                  class="fill-primary"
+                  d="M160.53 208v.11a.93.93 0 00-.53-.11z"
+                ></path>
+              </svg>
+              <div>
+                <h1 class="fs-5">Creativity</h1>
+                <p class="fs-6">
+                  Curabitur blandit lacus porttitor ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <div
+        class="d-flex flex-lg-row flex-column-reverse align-items-center"
+        style="gap: 100px"
+      >
+        <div style="flex-basis: 50%">
+          <p class="fs-6 text-ownprimary text-uppercase">Our Solutions</p>
+          <h1>Just sit & relax while we take care of your business needs.</h1>
+          <p class="fs-6 mt-4" style="color: #898f9d">
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Praesent commodo cursus. Maecenas sed diam eget
+            risus varius blandit sit amet non magna. Praesent commodo cursus
+            magna.
+          </p>
+          <div class="row gap-md-0 gap-5 mt-5">
+            <div class="col-md-6 col-12">
+              <h1>99.7%</h1>
+              <p class="fw-medium">Customer Satisfaction</p>
+              <div class="d-flex text-warning">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <h1>4x</h1>
+              <p class="fw-medium">New Visitors</p>
+              <div class="d-flex text-warning">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="flex-basis: 50%">
+          <img
+            class="w-100"
+            src="https://sandbox.elemisthemes.com/assets/img/illustrations/3d5@2x.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <div class="rounded-4 review-container" style="background-color: #f0f0f7">
+        <p class="text-center fs-6 text-ownprimary text-uppercase">
+          Happy Customers
+        </p>
+        <h1 class="fs-2 w-md-75 w-100 mx-auto text-center">
+          Don't take our word for it. See what customers are saying about us.
+        </h1>
+        <div class="d-flex align-items-center mt-5">
+          <div
+            class="position-relative d-lg-block d-none review-image-container"
+          >
+            <div
+              style="
+                clip-path: ellipse(45% 40% at 50% 50%);
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <img
+                class="w-100"
+                src="https://sandbox.elemisthemes.com/assets/img/photos/about28@2x.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="ps-md-5 review-content-container">
+            <div class="d-flex text-warning">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                />
+              </svg>
+            </div>
+            <p class="fs-5 mt-4" style="color: #898f9d">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              suscipit! Quos eius neque minima. Iste labore quo veniam sunt
+              autem quod commodi, ipsam obcaecati adipisci libero, corrupti
+              dolore ad consectetur nesciunt. Nisi voluptas id, laborum ipsam
+              quia saepe atque corporis!
+            </p>
+            <p class="fw-medium fs-5 mt-5">Jhon Doe</p>
+            <p class="mt-1">Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <div class="d-flex align-items-center gap-2 justify-content-end">
+        <p class="mb-0">Monthly</p>
+        <div class="form-check mb-0 form-switch">
+          <input type="checkbox" class="form-check-input" />
+          <label for="" class="form-check-label"></label>
+        </div>
+        <p class="mb-0">Yearly (<span class="text-danger">Save 30%</span>)</p>
+      </div>
+      <div class="d-flex flex-lg-row flex-column gap-lg-0 gap-5 mt-5">
+        <div style="flex-basis: 35%">
+          <p class="fs-6 font-medium text-ownprimary text-uppercase">
+            Our Pricing
+          </p>
+          <h1>We offer great and premium prices.</h1>
+          <p class="mt-4 w-75">
+            Enjoy a free 30-day trial and experience the full service. No credit
+            card required!
+          </p>
+          <button class="btn btn-primary own-button mt-4">
+            See All Prices
+          </button>
+        </div>
+        <div style="flex-basis: 65%">
+          <div class="row ms-md-auto cards-container">
+            <div class="col-md-6 col-12 g-3">
+              <div
+                class="bg-white rounded-3 first-price-card d-flex flex-column align-items-center"
+                style="
+                  box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07) !important;
+                  border-top-width: 5px;
+                  border-top-color: #5f5dba;
+                  border-top-style: solid;
+                  padding: 70px 0px;
+                "
+              >
+                <div class="d-flex align-items-start">
+                  <p class="mb-0 mt-2 fs-5">$</p>
+                  <p class="fs-1 mb-0">19</p>
+                  <p class="mb-0 align-self-end mb-2">/mo</p>
+                </div>
+                <p class="fs-5 fw-medium">Premium Plan</p>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      class="text-ownprimary"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                      />
+                    </svg>
+                    <p class="mb-0">5 Projects</p>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      class="text-ownprimary"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                      />
+                    </svg>
+                    <p class="mb-0">5 Projects</p>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      class="text-ownprimary"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                      />
+                    </svg>
+                    <p class="mb-0">5 Projects</p>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      class="text-ownprimary"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                      />
+                    </svg>
+                    <p class="mb-0">5 Projects</p>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      class="text-ownprimary"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                      />
+                    </svg>
+                    <p class="mb-0">5 Projects</p>
+                  </div>
+                </div>
+                <button class="btn btn-primary own-button mt-4">
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-12 bg-white rounded-3 d-flex flex-column align-items-center"
+              style="
+                box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, 0.07) !important;
+                border-top-width: 5px;
+                border-top-color: #5f5dba;
+                border-top-style: solid;
+                padding: 70px 0px;
+              "
+            >
+              <div class="d-flex align-items-start">
+                <p class="mb-0 mt-2 fs-5">$</p>
+                <p class="fs-1 mb-0">19</p>
+                <p class="mb-0 align-self-end mb-2">/mo</p>
+              </div>
+              <p class="fs-5 fw-medium">Premium Plan</p>
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    class="text-ownprimary"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                    />
+                  </svg>
+                  <p class="mb-0">5 Projects</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    class="text-ownprimary"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                    />
+                  </svg>
+                  <p class="mb-0">5 Projects</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    class="text-ownprimary"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                    />
+                  </svg>
+                  <p class="mb-0">5 Projects</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    class="text-ownprimary"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                    />
+                  </svg>
+                  <p class="mb-0">5 Projects</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    class="text-ownprimary"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10.5 16.2l-4-4l1.4-1.4l2.6 2.6l5.6-5.6l1.4 1.4l-7 7Z"
+                    />
+                  </svg>
+                  <p class="mb-0">5 Projects</p>
+                </div>
+              </div>
+              <button class="btn btn-primary own-button mt-4">
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <div class="d-flex flex-lg-row flex-column" style="gap: 100px">
+        <div style="flex-basis: 50%">
+          <img
+            class="w-100"
+            src="https://sandbox.elemisthemes.com/assets/img/illustrations/3d3@2x.png"
+            alt=""
+          />
+        </div>
+        <div style="flex-basis: 50%">
+          <p class="fs-6 text-ownprimary text-uppercase">Let’s Talk</p>
+          <h1>
+            Let's make something great together. We are trusted by over 5000+
+            clients.
+          </h1>
+          <p class="mt-4">
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+            vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus
+            ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+            massa justo sit amet risus.
+          </p>
+          <button class="btn btn-primary own-button mt-4">Join Us</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="margin-top: 100px; background-color: #f0f0f7; padding: 130px 0px"
+    >
+      <p class="text-center fs-6 text-ownprimary text-uppercase">Analyze Now</p>
+      <h1 class="w-75 text-center mx-auto">
+        Wonder how much faster your website can go? Easily check your SEO Score
+        now.
+      </h1>
+      <div
+        class="d-flex form-container px-md-0 px-3 align-items-center mx-auto mt-5"
+        style="height: 64px; margin-bottom: 100px"
+      >
+        <div class="form-floating w-100 h-100">
+          <input
+            type="email"
+            class="form-control h-100"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <button class="btn btn-primary h-100 own-button">Analyze</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
